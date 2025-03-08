@@ -6,15 +6,31 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #f00, #ffcc00);
-    color: white;
+    background-color: #f0f0f0;
     text-align: center;
     overflow-x: hidden;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 header {
     padding: 20px;
-    background-color: #b91d22;
+}
+
+#titulo {
+    font-size: 3.5em;
+    font-weight: bold;
+    color: #b91d22; /* Rojo inicial */
+    transition: color 0.5s, transform 0.5s;
+}
+
+#titulo:hover {
+    color: #ffcc00; /* Amarillo cuando pasa el ratón */
+    transform: scale(1.1);
+    text-shadow: 0 0 10px rgba(255, 204, 0, 0.7);
 }
 
 .logo h1 {
