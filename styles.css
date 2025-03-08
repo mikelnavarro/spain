@@ -5,6 +5,7 @@
 }
 
 body {
+    background: linear-gradient(135deg, #f00, #ffcc00);
     font-family: 'Arial', sans-serif;
     background-color: #f0f0f0;
     text-align: center;
@@ -50,10 +51,6 @@ header {
     border-radius: 15px;
 }
 
-
-body {
-    background: linear-gradient(135deg, #f00, #ffcc00);
-}
 
 .contenedor-intro h2 {
     font-size: 3em;
