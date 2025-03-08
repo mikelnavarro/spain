@@ -50,6 +50,11 @@ header {
     border-radius: 15px;
 }
 
+
+body {
+    background: linear-gradient(135deg, #f00, #ffcc00);
+}
+
 .contenedor-intro h2 {
     font-size: 3em;
     margin-bottom: 20px;
