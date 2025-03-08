@@ -1,9 +1,28 @@
-// Reproducir el himno automáticamente al cargar la página
-window.onload = function() {
-    var himno = document.getElementById('himno');
-    himno.play(); // Reproducir el himno cuando se carga la página
-};
 
+// Función que inicia una animación de color en el título
+window.onload = function() {
+    let titulo = document.getElementById("titulo");
+
+    // Primer color de la animación
+    setTimeout(function() {
+        titulo.style.color = "#ffcc00"; // Amarillo
+        titulo.style.transition = "color 2s ease"; // Duración de la animación
+    }, 500); // Después de 0.5 segundos
+
+    // Segundo color de la animación
+    setTimeout(function() {
+        titulo.style.color = "#b91d22"; // Rojo
+        titulo.style.transition = "color 2s ease";
+    }, 2000); // Después de 2 segundos
+
+    // Repetir la animación indefinidamente
+    setInterval(function() {
+        titulo.style.color = "#ffcc00";
+        setTimeout(function() {
+            titulo.style.color = "#b91d22";
+        }, 2000);
+    }, 4000); // Repite cada 4 segundos
+};
 function actualizarReloj() {
     let now = new Date();
 
