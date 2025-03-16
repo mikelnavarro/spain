@@ -21,6 +21,30 @@ header {
     padding: 20px;
 }
 
+header button{
+    padding: 12px;
+    margin:auto;
+    border: none;
+    background-color:rgb(58, 190, 231);
+
+}
+
+header button a{
+    color: inherit;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background-color: #f4f4f4;
+}
+
+.box{
+    width: 75%;
+}
+
+
 #titulo {
     font-size: 3.5em;
     font-weight: bold;
